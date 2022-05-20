@@ -8,7 +8,13 @@ import Seo from "../components/Seo"
 const IndexPage = () => {
   return (
     <>
-      <h1>Gatsby Strapi Folio</h1>
+      <main>
+        {/* <Hero />
+        <Services />
+        <Jobs />
+        <Projects />
+        <Seo /> */}
+      </main>
     </>
   )
 }
