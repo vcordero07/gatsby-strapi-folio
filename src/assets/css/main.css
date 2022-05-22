@@ -800,6 +800,18 @@ Footer
 .footer .social-link:hover {
   color: var(--clr-primary-5);
 }
+
+.footer-slug span {
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  color: var(--clr-grey-1);
+  transition: var(--transition);
+}
+.footer-slug span:hover {
+  color: var(--clr-primary-5);
+}
+
 /*
 ===============
 Pages
