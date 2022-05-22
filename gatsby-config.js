@@ -24,7 +24,22 @@ const strapiConfig = {
       },
     },
   ],
-  singleTypes: [],
+  singleTypes: [
+    {
+      singularName: "about",
+      queryParams: {
+        populate: {
+          image: "*",
+          stack: {
+            populate: {
+              title: "*",
+            },
+          },
+        },
+      },
+    },
+  ],
+  // singleTypes: [],
 }
 
 module.exports = {
