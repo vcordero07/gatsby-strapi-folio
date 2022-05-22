@@ -15,6 +15,11 @@ const strapiConfig = {
         populate: {
           image: "*",
           images: "*",
+          stack: {
+            populate: {
+              title: "*",
+            },
+          },
         },
       },
     },

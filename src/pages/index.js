@@ -6,18 +6,16 @@ import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Seo from "../components/Seo"
 const IndexPage = ({ data }) => {
-  console.log(data)
+  const {
+    allStrapiProject: { nodes: projects },
+  } = data
   return (
     <>
       <main>
         <Hero />
         <Services />
         <Jobs />
-        {/* 
-       
-       
-        <Projects />
-        */}
+        <Projects title="featured projects" showLink projects={projects} />
       </main>
     </>
   )
@@ -34,10 +32,14 @@ export const query = graphql`
         slug
         title
         url
+        stack {
+          id
+          title
+        }
         image {
           localFile {
             childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+              gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
             }
           }
         }
