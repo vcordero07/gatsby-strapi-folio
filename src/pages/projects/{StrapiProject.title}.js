@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 import Seo from "../../components/Seo"
 
 const ProjectTemplate = ({ pageContext: { title }, data }) => {
-  let projectURL = data.strapiProject.image.localFile.publicURL
   return (
     <>
       <main className="project-template-page">
@@ -22,9 +21,6 @@ export const query = graphql`
       image {
         localFile {
           publicURL
-          childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
-          }
         }
       }
     }
