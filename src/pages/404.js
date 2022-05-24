@@ -6,6 +6,7 @@ import Seo from "../components/Seo"
 const Error = () => {
   return (
     <>
+      <Seo title="404" />
       <main className="error-page">
         <div className="error-container">
           <StaticImage

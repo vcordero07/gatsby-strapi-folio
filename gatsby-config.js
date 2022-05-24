@@ -44,6 +44,14 @@ const strapiConfig = {
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `CatDev Folio`,
+    description: `Meowsome CatDev Folio built with Gatsby and Strapi`,
+    titleTemplate: `%s | CatDev Folio`,
+    url: `https://catdev.netlify.app`,
+    twitterUsername: `@vcordero07`,
+    image: `/mainImg.png`,
+  },
 
   plugins: [
     `gatsby-plugin-image`,
